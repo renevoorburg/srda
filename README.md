@@ -1,6 +1,6 @@
 # `srda`: semantically named RDA elements 
 
-**`srda` provides human readable and meaningful lexical equivalents for all RDA elements, defined using owl:sameAs relations.**
+**`srda` provides human readable and meaningful lexical equivalents for all RDA elements, defined using common `owl:sameAs` relations.**
 
 **RDA**, [Resource Description and Access](https://www.rdaregistry.info), is a modern metadata standard designed for use in the bibliographic domain. Unfortunaltely, the commission that designed RDA chose not the use **meaningful names** for the RDA elements but **abstract codes** instead. 
 
@@ -57,15 +57,15 @@ The element names of `srda` have been automatically derived from the *lexical al
 
 `srda` lives at [https://data.digitopia.nl/srda#](https://data.digitopia.nl/srda#) (which is also the **namespace** for `srda`).
 
-## The srda repository
+## The `srda` repository
 
-This repository provides the scripts that are used to create [https://data.digitopia.nl/srda#](https://data.digitopia.nl/srda#). Actually, only [srda_virtuoso.sparql](./srda_virtuoso.sparql) is used, the script [srda_virtuoso.sparql](./srda_virtuoso.sparql) provides an equivalent using a CONSTRUCT query.
+This repository ([https://github.com/renevoorburg/srda)](https://github.com/renevoorburg/srda)) provides the scripts that are used to create [https://data.digitopia.nl/srda#](https://data.digitopia.nl/srda#). Actually, only [srda_virtuoso.sparql](./srda_virtuoso.sparql) is used, the script [srda_virtuoso.sparql](./srda_virtuoso.sparql) provides an equivalent using a CONSTRUCT query for reference and conveniance.
 
 These queries expected the named graph `<http://rdaregistry.info/Elements/v5.0.19/>` to be loaded with all regular official RDA element definitions, as can be downloaded from [https://github.com/RDARegistry/RDA-Vocabularies/releases](https://github.com/RDARegistry/RDA-Vocabularies/releases). That excludes the object, datatype and unconstrained definitions and the 'rof' definitions.
 
 ## What about the RDA exical aliasses?
 
-Indeed, RDA does provided lexical aliases. Those lexical aliases are even used to create `srda`, so why not use those?
+Indeed, RDA does provided so called *lexical aliases*. Those lexical aliases are even used to create `srda`, so why not use them?
 
 The problem with the lexical aliases as provided by the official RDA definitions is multifold:
 
