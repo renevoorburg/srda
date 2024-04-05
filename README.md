@@ -57,7 +57,7 @@ The element names of `srda` have been automatically derived from the *lexical al
 
 ## The `srda` repository
 
-This repository ([https://github.com/renevoorburg/srda](https://github.com/renevoorburg/srda)) provides the scripts that are used to create [https://data.digitopia.nl/srda#](https://data.digitopia.nl/srda#). Actually, only [srda_virtuoso.sparql](./srda_virtuoso.sparql) is used, the script [srda_virtuoso.sparql](./srda_virtuoso.sparql) provides an equivalent using a CONSTRUCT query for reference and conveniance.
+This repository ([https://github.com/renevoorburg/srda](https://github.com/renevoorburg/srda)) provides the scripts that are used to create [https://data.digitopia.nl/srda#](https://data.digitopia.nl/srda#). Actually, only [srda_virtuoso.sparql](./srda_virtuoso.sparql) is used, the script [srda_construct.sparql](./srda_construct.sparql) provides an equivalent using a CONSTRUCT query for reference and conveniance.
 
 These queries expect the named graph `<http://rdaregistry.info/Elements/v5.0.19/>` to be available and loaded with all regular official RDA element definitions. These can be downloaded from [https://github.com/RDARegistry/RDA-Vocabularies/releases](https://github.com/RDARegistry/RDA-Vocabularies/releases). Note that the object, datatype, unconstrained and 'rof' definitions should not be loaded. They are not a part of `srda` (adding them would have resulted in conflicting and duplicate element names).
 
