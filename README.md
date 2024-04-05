@@ -61,22 +61,16 @@ The element names of `srda` have been automatically derived from the *lexical al
 
 This repository ([https://github.com/renevoorburg/srda)](https://github.com/renevoorburg/srda)) provides the scripts that are used to create [https://data.digitopia.nl/srda#](https://data.digitopia.nl/srda#). Actually, only [srda_virtuoso.sparql](./srda_virtuoso.sparql) is used, the script [srda_virtuoso.sparql](./srda_virtuoso.sparql) provides an equivalent using a CONSTRUCT query for reference and conveniance.
 
-These queries expected the named graph `<http://rdaregistry.info/Elements/v5.0.19/>` to be loaded with all regular official RDA element definitions, as can be downloaded from [https://github.com/RDARegistry/RDA-Vocabularies/releases](https://github.com/RDARegistry/RDA-Vocabularies/releases). That excludes the object, datatype and unconstrained definitions and the 'rof' definitions.
+These queries expected the named graph `<http://rdaregistry.info/Elements/v5.0.19/>` to be available and loaded with all regular official RDA element definitions. These can be downloaded from [https://github.com/RDARegistry/RDA-Vocabularies/releases](https://github.com/RDARegistry/RDA-Vocabularies/releases). The object, datatype and unconstrained and 'rof' definitions should not be loaded.
 
 ## What about the RDA exical aliasses?
 
-Indeed, RDA does provided so called *lexical aliases*. Those lexical aliases are even used to create `srda`, so why not use them?
+Indeed, RDA does provide so called *lexical aliases*. Those lexical aliases are even used to create `srda`, so why not use those in your RDF?
 
 The problem with the lexical aliases as provided by the official RDA definitions is multifold:
 
 * The property used to define lexical aliases, `<http://metadataregistry.org/uri/profile/regap/lexicalAlias>` is **not an internet standard**,
-* Its is **not defined properly**, looking it up results in a `http-404` error.
+* It is **not defined properly**, looking it up results in a `http-404` error.
 * Its **semantics are unclear**.
 
 Using `owl:sameAs`, as `srda` does, fixes these shortcomings. 
-
-
-
-
-
-
