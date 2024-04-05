@@ -61,7 +61,7 @@ This repository ([https://github.com/renevoorburg/srda](https://github.com/renev
 
 These queries expect the named graph `<http://rdaregistry.info/Elements/v5.0.19/>` to be available and loaded with all regular official RDA element definitions. These can be downloaded from [https://github.com/RDARegistry/RDA-Vocabularies/releases](https://github.com/RDARegistry/RDA-Vocabularies/releases). Note that the object, datatype, unconstrained and 'rof' definitions should not be loaded. They are not a part of `srda` (adding them would have resulted in conflicting and duplicate element names).
 
-## What about the RDA exical aliasses?
+## What about the RDA lexical aliasses?
 
 Indeed, RDA does provide so called *lexical aliases*. Those lexical aliases are even used to create `srda`, so why not use them in your RDF?
 
